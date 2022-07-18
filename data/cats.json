@@ -1,12 +1,38 @@
 [
   {
-    "name": "alaska",
-    "temperament": "scaredy",
-    "age": "8"
+    "name": "Bolin",
+    "colour": "black"
   },
   {
-    "name": "jerry",
-    "temperament": "sassy",
-    "age": "12"
+    "name": "Brucey",
+    "colour": "tabby"
+  },
+  {
+    "name": "Moss",
+    "colour": "tabby"
+  },
+  {
+    "name": "Coco",
+    "colour": "black"
+  },
+  {
+    "name": "Beniot",
+    "colour": "black"
+  },
+  {
+    "name": "Smudge",
+    "colour": "ginger"
+  },
+  {
+    "name": "Amelia",
+    "colour": "Tabby"
+  },
+  {
+    "name": "Jack",
+    "colour": "Tabby"
+  },
+  {
+    "name": "Jack",
+    "colour": "Tabby"
   }
 ]

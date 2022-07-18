@@ -1,38 +1,70 @@
 const http = require('http');
 const fs = require('fs/promises');
 
-const server = http.createServer((req, res) => {
-  const { url, method } = req;
-  console.log(url, method);
-  if (url === '/' && method === 'POST') {
+// GET - Path: '/' - 'hello world!'
+// GET - Path: '/cats' - { cats: [ {name: .., colour: ...} ] }
+
+const server = http.createServer((request, response) => {
+  // This function is invoked when a request comes in
+
+  // request - info about the request
+  console.log(request.url, request.method);
+  // response - methods to set what the response should be
+
+  if (request.url === '/' && request.method === 'GET') {
+    response.setHeader('Content-Type', 'application/json');
+    response.statusCode = 200;
+    const body = { msg: 'Hello world!' };
+    response.write(JSON.stringify(body));
+    response.end();
+  }
+
+  if (request.url === '/cats' && request.method === 'GET') {
+    response.setHeader('Content-Type', 'application/json');
+    response.statusCode = 200;
+    fs.readFile(`${__dirname}/data/cats.json`, 'utf-8').then((catInfo) => {
+      const parsedCats = JSON.parse(catInfo);
+      const cats = { cats: parsedCats };
+      response.write(JSON.stringify(cats));
+      response.end();
+    });
+  }
+
+  // read file
+  // send new data from insomnia
+  // write to the file
+  // send back data to confirm
+  if (request.url === '/cats' && request.method === 'POST') {
     let body = '';
-    req.on('data', (packet) => {
+    request.on('data', (packet) => {
       body += packet.toString();
     });
-    req.on('end', () => {
-      const newCat = JSON.parse(body);
-      fs.readFile(`${__dirname}/data/cats.json`, 'utf-8')
+    request.on('end', () => {
+      const parsedBody = JSON.parse(body);
+      fs.readFile('./data/cats.json', 'utf-8')
         .then((data) => {
-          const cats = JSON.parse(data);
-          const newCats = [...cats, newCat];
-          console.log(newCats);
-          return fs.writeFile(
-            `${__dirname}/data/cats.json`,
-            JSON.stringify(newCats, null, 2)
-          );
+          const ogCats = JSON.parse(data);
+          const newCats = [...ogCats];
+          newCats.push(parsedBody);
+          fs.writeFile('./data/cats.json', JSON.stringify(newCats, null, 2));
         })
         .then(() => {
-          res.setHeader('Content-Type', 'application/json');
-          res.statusCode = 201;
-          res.write(JSON.stringify({ cat: newCat }));
-          res.end();
+          response.setHeader('Content-Type', 'application/json');
+          response.statusCode = 201;
+          response.write(JSON.stringify({ cats: parsedBody }));
+          response.end();
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          console.log(err);
+        });
     });
   }
 });
 
-server.listen(9090, (err) => {
-  if (err) console.log(err);
-  else console.log('Server listening on port: 9090');
+server.listen(8080, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('Server listening on port 8080...');
+  }
 });
