@@ -1,0 +1,17 @@
+[
+  {
+    "artistId": 1,
+    "fullName": "Leonardo Da Vinci",
+    "funFact": "Invented a bad helicopter"
+  },
+  {
+    "artistId": 2,
+    "fullName": "Katherine Hurst",
+    "funFact": "She rules"
+  },
+  {
+    "artistId":3,
+    "fullName": "Claude Monet",
+    "funFact": "Needed glasses"
+  }
+]

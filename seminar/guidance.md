@@ -38,8 +38,7 @@ if (method === 'POST') {
   });
   req.on('end', () => {
     const newCat = JSON.parse(body);
-    console.log(newCat)
-    });
+    console.log(newCat);
   });
 }
 ```

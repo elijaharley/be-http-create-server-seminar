@@ -1,0 +1,26 @@
+[
+    {
+        "artworkId":1,
+        "title":"The Mona Lisa",
+        "artistId":1,
+        "worthInDollars": 850000000 
+    },
+    {
+        "artworkId":2,
+        "title":"The Last Supper",
+        "artistId":1,
+        "worthInDollars": 450000000 
+    },
+    {
+        "artworkId":3,
+        "title":"Portrait of dog",
+        "artistId":2,
+        "worthInDollars": 10 
+    },
+    {
+        "artworkId":4,
+        "title":"The Water Lily Pond",
+        "artistId":3,
+        "worthInDollars": 70000000 
+    }
+]
