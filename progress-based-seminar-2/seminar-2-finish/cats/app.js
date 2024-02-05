@@ -47,8 +47,8 @@ const server = http.createServer((request, response) => {
         .catch((err) => {
           console.log(err);
         });
-    })
-    request.on('error', ()=>{
+    });
+    request.on('error', () => {
       console.log(error);
     });
   }

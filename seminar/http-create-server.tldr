@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 359.765625,
-      "y": 176.9910888671875,
-      "lastActivityTimestamp": 1706888681924,
+      "x": 568.2374675061608,
+      "y": 358.64629218964865,
+      "lastActivityTimestamp": 1707130705028,
       "meta": {}
     },
     {
@@ -118,8 +118,8 @@
       "screenBounds": {
         "x": 0,
         "y": 0,
-        "w": 781.9443969726562,
-        "h": 445.1388854980469
+        "w": 1152.5,
+        "h": 557.5
       },
       "zoomBrush": null,
       "isGridMode": false,
@@ -128,7 +128,7 @@
       "isChatting": false,
       "highlightedUserIds": [],
       "meta": {},
-      "currentPageId": "page:d_sQovTWNMvMImvMuLOo6",
+      "currentPageId": "page:SpZRcDuFEhPqGsCZIyhNe",
       "canMoveCamera": true,
       "isFocused": false,
       "devicePixelRatio": 2.4000000953674316,
@@ -136,7 +136,7 @@
       "openMenus": [],
       "isChangingStyle": false,
       "isReadonly": false,
-      "isHoveringCanvas": false,
+      "isHoveringCanvas": true,
       "scribbles": [],
       "id": "instance:instance",
       "typeName": "instance"
@@ -158,7 +158,35 @@
       "typeName": "camera"
     },
     {
-      "x": 185.8890661215102,
+      "meta": {},
+      "id": "page:d_sQovTWNMvMImvMuLOo6",
+      "name": "Questions",
+      "index": "a2",
+      "typeName": "page"
+    },
+    {
+      "x": 23.65880740800118,
+      "y": 170.2506711967971,
+      "z": 0.6673183007042265,
+      "meta": {},
+      "id": "camera:page:d_sQovTWNMvMImvMuLOo6",
+      "typeName": "camera"
+    },
+    {
+      "editingShapeId": null,
+      "croppingShapeId": null,
+      "selectedShapeIds": [],
+      "hoveredShapeId": null,
+      "erasingShapeIds": [],
+      "hintingShapeIds": [],
+      "focusedGroupId": null,
+      "meta": {},
+      "id": "instance_page_state:page:d_sQovTWNMvMImvMuLOo6",
+      "pageId": "page:d_sQovTWNMvMImvMuLOo6",
+      "typeName": "instance_page_state"
+    },
+    {
+      "x": 311.2709020590102,
       "y": 186.79344528860085,
       "rotation": 0,
       "isLocked": false,
@@ -181,7 +209,7 @@
       "typeName": "shape"
     },
     {
-      "x": 283.65,
+      "x": 397.3752197265625,
       "y": 106.59,
       "rotation": 0,
       "isLocked": false,
@@ -341,41 +369,12 @@
       "typeName": "shape"
     },
     {
-      "meta": {},
-      "id": "page:d_sQovTWNMvMImvMuLOo6",
-      "name": "Questions",
-      "index": "a2",
-      "typeName": "page"
-    },
-    {
-      "x": 0,
-      "y": 0,
-      "z": 1,
-      "meta": {},
-      "id": "camera:page:d_sQovTWNMvMImvMuLOo6",
-      "typeName": "camera"
-    },
-    {
-      "editingShapeId": null,
-      "croppingShapeId": null,
-      "selectedShapeIds": [],
-      "hoveredShapeId": "shape:C7hcVASyi6dSl_MarrLgh",
-      "erasingShapeIds": [],
-      "hintingShapeIds": [],
-      "focusedGroupId": null,
-      "meta": {},
-      "id": "instance_page_state:page:d_sQovTWNMvMImvMuLOo6",
-      "pageId": "page:d_sQovTWNMvMImvMuLOo6",
-      "typeName": "instance_page_state"
-    },
-    {
-      "x": 79.78174832988384,
-      "y": 88.30340576171875,
+      "x": 362.00244293345906,
+      "y": 67.58895006435685,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
       "meta": {},
-      "id": "shape:C7hcVASyi6dSl_MarrLgh",
       "type": "text",
       "props": {
         "color": "black",
@@ -385,10 +384,11 @@
         "font": "draw",
         "align": "start",
         "autoSize": false,
-        "scale": 0.6880381258368818
+        "scale": 1.0392304135207582
       },
       "parentId": "page:d_sQovTWNMvMImvMuLOo6",
       "index": "a1",
+      "id": "shape:C7hcVASyi6dSl_MarrLgh",
       "typeName": "shape"
     },
     {

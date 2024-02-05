@@ -12,11 +12,11 @@
     "colour": "tabby"
   },
   {
-    "name": "Coco",
-    "colour": "black"
+    "name": "Lionel",
+    "colour": "tuxedo"
   },
   {
-    "name": "Beniot",
+    "name": "Spam",
     "colour": "black"
   },
   {
@@ -26,9 +26,5 @@
   {
     "name": "Amelia",
     "colour": "Tabby"
-  },
-  {
-    "name": "Garfield",
-    "colour": "orange"
   }
 ]

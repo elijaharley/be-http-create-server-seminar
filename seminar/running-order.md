@@ -21,5 +21,3 @@ make no assumptions**
 14. RETURN fs.writeFile
 15. send response - look at notes _What status code will the response have?_
 16. res.end()
-
-How can we tell that a post request to this url has happened?
